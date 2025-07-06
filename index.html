@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ChaLeaf - Fresh and Organic Tea from the Hills">
+    <meta name="keywords" content="Tea, Organic Tea, ChaLeaf, Herbal">
+    <meta name="author" content="Bhuvan S">
+    <title>ChaLeaf - Fresh Organic Tea</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="B:\Bhuvan\logo.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ChaLeaf</h1>
+            <p>Fresh Organic Tea, Straight from Nature 🌿</p>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="container">
+            <h2>About Our Tea</h2>
+            <p>ChaLeaf sources 100% organic tea leaves from the Western Ghats. Our tea is handpicked, sun-dried, and packed without additives. Taste the purity of tradition with every sip.</p>
+            <img src="‪B:\Bhuvan\tea.jpg" alt="Fresh tea leaves">
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div id="testimonial">
+                <p id="testimonial-text">“Absolutely refreshing! Best tea I’ve tasted.” – Asha M.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <table>
+                <tr>
+                    <th>Pack Size</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>100g</td>
+                    <td>₹199</td>
+                </tr>
+                <tr>
+                    <td>250g</td>
+                    <td>₹399</td>
+                </tr>
+                <tr>
+                    <td>500g</td>
+                    <td>₹749</td>
+                </tr>
+            </table>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ChaLeaf. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const testimonials = [
+            "“Absolutely refreshing! Best tea I’ve tasted.” – Asha M.",
+            "“Rich aroma and smooth flavor. Highly recommend.” – Rohan K.",
+            "“I switched to ChaLeaf and never looked back.” – Priya D."
+        ];
+
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % testimonials.length;
+            document.getElementById("testimonial-text").textContent = testimonials[index];
+        }, 4000);
+    </script>
+</body>
+</html>
